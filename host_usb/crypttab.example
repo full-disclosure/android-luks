@@ -1,0 +1,2 @@
+nvme1n1p6_crypt /dev/nvme1n1p6 none luks,keyscript=/usr/local/sbin/openluksdevices.sh
+
