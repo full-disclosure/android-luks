@@ -10,7 +10,7 @@ You can use this app, however you may still see crashes as not all errors are ha
 # How to use
 
 Install the Android app, install the Linux host program and scripts,
-initialize the key and plug your phone iver USB.
+initialize the key and plug your phone over USB.
 Now, when your Linux machine boots, you should see the Android app automatically popping up.
 As soon as you press "Unlock" button and confirm your biometrics,
 the boot process will continue without typing in the password.
@@ -34,7 +34,7 @@ Android app sources and manual: [android_luks/](android_luks/)
 # Linux host program
 
 The host application consists of a program that communicates with Android over USB and
-a LUKS helper script that supplies the decrytion key.
+a LUKS helper script that supplies the decryption key.
 The `crypttab` needs to be updated manually using a supplied example.
 If LUKS is unable to get the key from USB, it will fall back to your existing passphrase.
 
