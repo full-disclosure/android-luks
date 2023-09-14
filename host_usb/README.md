@@ -6,6 +6,7 @@ Executed on host where LUKS needs to be unlocked.
 # Install
 
 Run `./install.sh` to compile the program and install needed scripts in initramfs.
+The `crypttab` needs to be updated manually using a supplied example (see repo).
 
 # Init the key
 
