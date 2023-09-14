@@ -6,6 +6,23 @@ Current status is: `stable proof of concept`.
 
 You can use this app, however you may still see crashes as not all errors are handled at the moment.
 
+# Supported devices
+
+The app has been tested on:
+
+* Xiaomi A3 (Android 11)
+* Google Pixel 3 (Android 12)
+* Samsung A54 (Android 13)
+
+The usb host program has been tested on:
+
+* Debian 11 bullseye i586
+* Ubuntu 22.04 jammy x86_64
+
+The usb host does not work so far on:
+
+* Linux Mint 21.2 victoria - /etc/crypttab is ignored because systemd is used. The support may be added later
+
 
 # How to use
 
