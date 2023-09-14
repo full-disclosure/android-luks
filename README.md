@@ -36,6 +36,8 @@ See the reference video:
 
 [example.mp4](docs/example.mp4)
 
+![example.gif](docs/example.gif)
+
 
 # Android app
 
