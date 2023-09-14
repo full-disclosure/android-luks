@@ -1,6 +1,6 @@
 # android-luks
 
-An app that allows secure LUKS unlocking using usb accessory mode.
+An app that allows secure LUKS unlocking using usb accessory mode without typing your LUKS password.
 
 Current status is: `stable proof of concept`.
 
