@@ -76,8 +76,12 @@ jobs:
     - run: | 
          echo "Run, Build Application using script"
          cd host_usb
+         apt-get update
+         apt-get install -y libusb-1.0.0-dev
+         chmod +x ./compile.sh
          ./compile.sh
          cd ../android_luks
+         chmod +x ./build.sh
          ./build.sh
 
     - name: Perform CodeQL Analysis
