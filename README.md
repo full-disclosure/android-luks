@@ -6,6 +6,9 @@ Current status is: `stable proof of concept`.
 
 You can use this app, however you may still see crashes as not all errors are handled at the moment.
 
+![CodeQL status](https://github.com/full-disclosure/android-luks/actions/workflows/codeql.yml/badge.svg)
+
+
 # Supported devices
 
 The app has been tested on:
