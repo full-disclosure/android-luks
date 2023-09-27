@@ -80,7 +80,7 @@ jobs:
     #   modify them (or add more) to build your code if your project, please refer to the EXAMPLE below for guidance.
 
     - name: Build cpp
-      if: ${{ env.CODEQL_TRACER_LANGUAGES == "cpp" }}
+      if: ${{ env.CODEQL_TRACER_LANGUAGES == 'cpp' }}
       run: | 
          echo "Build cpp"
          env
@@ -90,7 +90,7 @@ jobs:
          chmod +x ./compile.sh
 
     - name: Build java
-      if: ${{ env.CODEQL_TRACER_LANGUAGES == "java" }}
+      if: ${{ env.CODEQL_TRACER_LANGUAGES == 'java' }}
       run: | 
          echo "Build java"
          cd android_luks
