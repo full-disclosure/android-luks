@@ -79,15 +79,21 @@ jobs:
     #   If the Autobuild fails above, remove it and uncomment the following three lines.
     #   modify them (or add more) to build your code if your project, please refer to the EXAMPLE below for guidance.
 
-    - run: | 
-         echo "Run, Build Application using script"
+    - name: Build cpp
+      if: ${{ env.CODEQL_TRACER_LANGUAGES == "cpp" }}
+      run: | 
+         echo "Build cpp"
          env
          cd host_usb
          sudo apt-get update
          sudo apt-get install -y libusb-1.0.0-dev
          chmod +x ./compile.sh
-         ./compile.sh
-         cd ../android_luks
+
+    - name: Build java
+      if: ${{ env.CODEQL_TRACER_LANGUAGES == "java" }}
+      run: | 
+         echo "Build java"
+         cd android_luks
          chmod +x ./build.sh
          ./build.sh
 
