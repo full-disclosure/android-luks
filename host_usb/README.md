@@ -3,10 +3,14 @@
 A program to interact with Android LUKS app.
 Executed on host where LUKS needs to be unlocked.
 
+# Update crypttab
+
+The `crypttab` needs to be updated manually using a supplied example (see repo).
+Typically, just replace the last `discard` with `keyscript=/usr/local/sbin/openluksdevices.sh`
+
 # Install
 
 Run `./install.sh` to compile the program and install needed scripts in initramfs.
-The `crypttab` needs to be updated manually using a supplied example (see repo).
 
 # Init the key
 
