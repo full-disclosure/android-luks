@@ -19,7 +19,7 @@ Run the Android app and press "Init" button to generate a random encryption key.
 # Add the key to LUKS
 
 Connect your phone over USB and unlock the screen.
-Run `./add-key.sh /dev/yourluks`, where `/dev/yourluks` is your encrypted partition, ex, /dev/sda2. You should see the Android app poping up. Press the "Unlock" button to unclock the key. Enter your existing LUKS passphrase and wait until the script finishes.
+Run `./add-key.sh /dev/yourluks`, where `/dev/yourluks` is your encrypted partition, ex, /dev/sda2. You should see the Android app poping up. Press the "Unlock" button to unlock the key. Enter your existing LUKS passphrase and wait until the script finishes.
 
 You can re-run `add-key.sh` script with another phone and add mutiple keys.
 
