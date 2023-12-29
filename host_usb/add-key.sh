@@ -25,7 +25,7 @@ then
 	exit 3
 fi
 
-echo "Adding the key to UKS partition"
+echo "Adding the key to LUKS partition: \"$1\""
 echo $KEY | xxd -r -p > /root/android_luks_key
 cryptsetup luksAddKey "$1" /root/android_luks_key
 shred /root/android_luks_key
