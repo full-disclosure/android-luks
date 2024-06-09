@@ -260,6 +260,8 @@ public class MainActivity extends AppCompatActivity implements Runnable
             }
 
             isAuthenticated = false;
+            finish();
+            System.exit(0);
         }
         catch (IOException e)
         {
