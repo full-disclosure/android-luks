@@ -26,4 +26,8 @@ sha1: 937c62119d58c58b30f82a046f57458a3c93d071
 sha256: caa3c53fc63e9bd7b41178bc556817a08299f7d14bd994be3506d06301c893d2
 sha512: c9a6eb82769a6bf12dde3bd0d6a4eb755a6c471a24a152e54256794d7f5845c7c6dc0d4788c3420915e83cf3f0e322bd01d78bfe4779df0390675fb9adc609a5
 ```
+To verify:
+```
+apksigner verify --print-certs -verbose android_luks_v*.apk
+```
 
