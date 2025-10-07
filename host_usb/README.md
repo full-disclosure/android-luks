@@ -10,7 +10,13 @@ Typically, just replace the last `discard` with `keyscript=/usr/local/sbin/openl
 
 # Install
 
-Run `./install.sh` to compile the program and install needed scripts in initramfs.
+Prerequisites for building:
+
+```
+sudo apt-get install build-essential
+```
+
+Run `sudo ./install.sh` to compile the program and install needed scripts in initramfs.
 
 # Init the key
 
