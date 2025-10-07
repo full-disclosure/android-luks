@@ -46,7 +46,7 @@ See the reference video:
 
 The app has two functions: Init and Unlock.
 
-`Init` creates a new random encryption key and securely encrypts it using biometrcs.
+`Init` creates a new random encryption key and securely encrypts it using biometrics.
 
 `Unlock` gets biometrics, decrypts the key and sends it over USB.
 
