@@ -5,18 +5,25 @@ Executed on host where LUKS needs to be unlocked.
 
 # Update crypttab
 
-The `crypttab` needs to be updated manually using a supplied example (see repo).
+## initramfs-tools
+
+The `crypttab` needs to be updated manually using a supplied example (`crypttab.example`).
 Typically, just replace the last `discard` with `keyscript=/usr/local/sbin/openluksdevices.sh`
+
+## dracut
+
+Ubuntu 26 defaults to dracut and systemd, and there is no keyscript available.
+Instead, we need to add a socket, that will provide the key data. See `crypttab.dracut` example.
 
 # Install
 
-Prerequisites for building:
-
-```
-sudo apt-get install build-essential libusb-1.0.0-dev
-```
+## initramfs-tools
 
 Run `sudo ./install.sh` to compile the program and install needed scripts in initramfs.
+
+## dracut
+
+Run `sudo ./install-dracut.sh` instead.
 
 # Init the key
 
