@@ -21,6 +21,7 @@ The usb host program has been tested on:
 
 * Debian 11 bullseye i586
 * Ubuntu 22.04 jammy x86_64
+* Ubuntu 26 (dracut)
 
 The usb host does not work so far on:
 
