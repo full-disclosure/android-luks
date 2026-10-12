@@ -1,0 +1,9 @@
+[Unit]
+Description=LUKS key supply program (openluksdevices.sh)
+DefaultDependencies=no
+
+[Service]
+ExecStart=/usr/local/sbin/openluksdevices.sh
+StandardInput=null
+StandardOutput=socket
+StandardError=journal

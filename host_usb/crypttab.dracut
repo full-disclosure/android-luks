@@ -1,0 +1,2 @@
+nvme1n1p6_crypt /dev/nvme1n1p6 /run/luks-key.sock luks
+

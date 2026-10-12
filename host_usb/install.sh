@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "Install libusb..."
-apt-get install build-essential g++ libusb-1.0.0-dev
 echo "Compile..."
 ./compile.sh
 
