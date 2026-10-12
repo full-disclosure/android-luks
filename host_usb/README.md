@@ -13,7 +13,7 @@ Typically, just replace the last `discard` with `keyscript=/usr/local/sbin/openl
 Prerequisites for building:
 
 ```
-sudo apt-get install build-essential
+sudo apt-get install build-essential libusb-1.0.0-dev
 ```
 
 Run `sudo ./install.sh` to compile the program and install needed scripts in initramfs.
