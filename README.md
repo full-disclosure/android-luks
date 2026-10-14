@@ -21,12 +21,8 @@ The usb host program has been tested on:
 
 * Debian 11 bullseye i586
 * Ubuntu 22.04 jammy x86_64
+* Linux Mint 22.3 (same as Ubuntu 22.04)
 * Ubuntu 26 (dracut)
-
-The usb host does not work so far on:
-
-* Linux Mint 21.2 victoria - /etc/crypttab is ignored because systemd is used. The support may be added later
-
 
 # How to use
 
