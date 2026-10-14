@@ -3,7 +3,7 @@
 A program to interact with Android LUKS app.
 Executed on host where LUKS needs to be unlocked.
 
-# Update crypttab
+# 1. Update crypttab
 
 ## initramfs-tools
 
@@ -15,7 +15,7 @@ Typically, just replace the last `discard` with `keyscript=/usr/local/sbin/openl
 Ubuntu 26 defaults to dracut and systemd, and there is no keyscript available.
 Instead, we need to add a socket, that will provide the key data. See `crypttab.dracut` example.
 
-# Install
+# 2. Install
 
 ## initramfs-tools
 
@@ -25,18 +25,18 @@ Run `sudo ./install.sh` to compile the program and install needed scripts in ini
 
 Run `sudo ./install-dracut.sh` instead.
 
-# Init the key
+# 3. Init the key
 
 Run the Android app and press "Init" button to generate a random encryption key.
 
-# Add the key to LUKS
+# 4. Add the key to LUKS
 
-Connect your phone over USB and unlock the screen.
+Connect your phone over USB and unlock the screen (do not start the app yet).
 Run `sudo ./add-key.sh /dev/yourluks`, where `/dev/yourluks` is your encrypted partition, ex, /dev/sda2. You should see the Android app poping up. Press the "Unlock" button to unlock the key. Enter your existing LUKS passphrase and wait until the script finishes.
 
 You can re-run `add-key.sh` script with another phone and add mutiple keys.
 
-# Test
+# 5. Test
 
 Re-plug the USB, unlock the screen and reboot your computer. See the reference video:
 
