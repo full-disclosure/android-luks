@@ -3,6 +3,8 @@
 A program to interact with Android LUKS app.
 Executed on host where LUKS needs to be unlocked.
 
+Before you start, make sure to identify which boot method your distro uses: is it based on `initramfs-tools` family, or (a newer) `dracut` family. Because instructions differ based on what your disto uses.
+
 # 1. Update crypttab
 
 ## initramfs-tools
